@@ -1,0 +1,7 @@
+model_name: YOLO
+model_ckpt: yolo11m.pt
+dataset_yaml: configs/neudet_base.yaml
+defaults:
+  epochs: 100
+  imgsz: 640
+  device: cpu

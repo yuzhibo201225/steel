@@ -1,0 +1,7 @@
+model_name: RT-DETR
+model_ckpt: rtdetr-l.pt
+dataset_yaml: configs/neudet_base.yaml
+defaults:
+  epochs: 100
+  imgsz: 640
+  device: cpu
