@@ -1,0 +1,19 @@
+[project]
+name = "steel-neudet-benchmark"
+version = "0.1.0"
+description = "Reproducible NEU-DET benchmarking for RT-DETR vs YOLO with 4-fold stratified CV"
+requires-python = ">=3.10"
+dependencies = [
+  "pyyaml>=6.0",
+]
+
+[project.optional-dependencies]
+train = [
+  "ultralytics>=8.3",
+]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
